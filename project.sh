@@ -12,7 +12,6 @@ cd siteweb/
 sudo yum -y install mailx 
 sudo chmod +x start.sh
 sudo ./start.sh
-sudo docker-compose up
 
 if [ $1 == "master" ]
 then
