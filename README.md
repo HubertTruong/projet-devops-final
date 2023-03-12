@@ -3,6 +3,7 @@
 ## Table des matières :
 ###### Description du projet
 ###### Technologies utilisées
+###### Commandes à utiliser pour lancer le projet
 ###### Problèmes rencontrés et solutions
 ###### Avis personnels sur ce projet
 
@@ -17,6 +18,24 @@ Pour ce faire, nous avons utilisé plusieurs technologies :
 > Automatiser les tâches que vont effectuer les machines virtuelles précédemment créées (par exemple, installer Docker sur la VM).
 + Docker
 > Créer des containers qui vont permettre de mieux gérer le déploiement de mon application sur la VM.
+
+## Commandes à utiliser pour lancer le projet :
+1. Pour lancer le projet, il faut tout d'abord faire un pull depuis Github, dans un dossier de votre choix :
+```
+git clone https://github.com/HubertTruong/projet-devops-final.git
+```
+2. Ensuite, vérifiez que vous avez bien les fichiers suivants :
+> project.sh
+> Vagrantfile
+3. Ouvrir un terminal depuis votre environnement d'édition de code, se placer dans le dossier de projet avec la commande suivante :
+```
+cd projet-devops-final
+```
+4. Lancer le projet avec la commande : 
+```
+vagrant up
+```
+5. Attendre la mise en place du projet et vérifier en rentrant l'IP suivante dans votre navigateur de recherche : http://192.168.99.11 une fois le programme monté et exécuté.
 
 ## Problèmes rencontrés et solutions :
 Les gros problèmes rencontrés dans ce projet sont :
