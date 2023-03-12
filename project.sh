@@ -6,9 +6,12 @@ yum install -y python3
 yum -y install git
 sudo yum -y install docker
 sudo yum -y install docker-compose
-git clone https://github.com/HubertTruong/devops2.git
+git clone https://github.com/HubertTruong/siteweb.git
 sudo service docker restart
-cd devops2/
+cd siteweb/
+sudo yum -y install mailx 
+sudo chmod +x start.sh
+sudo ./start.sh
 sudo docker-compose up
 
 if [ $1 == "master" ]
@@ -18,4 +21,3 @@ then
   /usr/local/bin/pip3 install ansible
   yum install -y sshpass
 fi
-echo "For this Stack, you will use $(ip -f inet addr show enp0s8 | sed -En -e 's/.*inet ([0-9.]+).*/\1/p') IP Address"
